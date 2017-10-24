@@ -10,7 +10,7 @@ body {
   postion: relative;
 }
 .wrapper {
-  max-width: 560px;
+  max-width: 720px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -85,8 +85,9 @@ body {
   display: flow-root;
 }
 .home-container-title{
-    width: 500px;
-    height: 200px;
+    max-width: 500px;
+    height: 225px;
+    overflow: hidden;
   }
 .home-title {
     font-size: 52px;
@@ -94,9 +95,10 @@ body {
     margin-bottom: 0px;
   }
 .home-container-descripcion {
-    width: 500px;
+    max-width: 500px;
     margin-bottom: 40px;
     height: 135px;
+    overflow: hidden;
   }
 .home-container-descripcion p {
     font-size: 20px;
@@ -608,15 +610,17 @@ body {
     border-color: #737171;
     color: white;
   }
-.postcontainer {
-  margin-top: 120px;
+/*margin-top: 120px;
   position: absolute;
-  display: -webkit-box;
   display: flex;
-  margin-left: -140px;
-}
+  margin-left: -140px;*/
 .postcontainer-item {
     position: fixed;
+    margin-top: 120px;
+    /* display: -webkit-box; */
+    display: -webkit-box;
+    display: flex;
+    margin-left: -140px;
   }
 .postcontainer-item i {
     font-size: 30px;
@@ -628,6 +632,40 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+@media (max-width: 768px) {
+body {
+    padding-left: 20px;
+    padding-right: 20px
+}
+.home {
+      background-image: url('../images/home-transparent.png')
+}
+.postStories-item-blog, .postAudio-item-blog {
+      display: -webkit-box;
+      display: flex;
+      flex-wrap: wrap
+  }
+.postStories-item-img, .postAudio-item-img {
+      width: 100%;
+      height: 100px
+  }
+.postStories-item-description, .postAudio-item-description {
+      height: 160px;
+      width: 100%;
+      display: -webkit-box;
+      display: flex;
+      padding-left: 10px
+  }
+.postStories-item-title, .postAudio-item-title {
+      max-height: 50%
+  }
+.postStories-item-subtitle, .postAudio-item-subtitle {
+      display: none
+  }
+.postcontainer {
+    display: none
+}
+  }
 @media (max-width: 544px) {
 .header-enlace {
       display:none
@@ -674,6 +712,9 @@ body {
       height: 80px;
       overflow: hidden
   }
+.postcontainer-item {
+      display: none
+  }
 .postStories-item-title, .postAudio-item-title {
       min-height: 20%;
   }
@@ -688,34 +729,4 @@ body {
 .postStories-item-blog, .postAudio-item-blog {
         height: auto!important;
     }
-    }
-@media (max-width: 768px) {
-.home {
-      background-image: url('../images/home-transparent.png')
-}
-.postStories-item-blog, .postAudio-item-blog {
-      display: -webkit-box;
-      display: flex;
-      flex-wrap: wrap
-  }
-.postStories-item-img, .postAudio-item-img {
-      width: 100%;
-      height: 100px
-  }
-.postStories-item-description, .postAudio-item-description {
-      height: 160px;
-      width: 100%;
-      display: -webkit-box;
-      display: flex;
-      padding-left: 10px
-  }
-.postStories-item-title, .postAudio-item-title {
-      max-height: 50%
-  }
-.postStories-item-subtitle, .postAudio-item-subtitle {
-      display: none
-  }
-.postcontainer {
-    display: none
-}
     }
