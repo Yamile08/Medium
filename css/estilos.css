@@ -3,6 +3,9 @@ body {
   overflow-x: hidden;
   margin: 0;
 }
+.hola {
+  background: red;
+}
 .u-wrapper {
   max-width: 1000px;
   margin-left: auto;
@@ -598,7 +601,7 @@ body {
 .post-footer-button{
     margin-left: 70px;
     margin-top: 10px;
-    width: 400px;
+    width: 140px;
   }
 .post-footer-button a {
     text-decoration: none;
@@ -635,7 +638,8 @@ body {
 @media (max-width: 768px) {
 body {
     padding-left: 20px;
-    padding-right: 20px
+    padding-right: 20px;
+    padding-bottom: 20px
 }
 .home {
       background-image: url('../images/home-transparent.png')
@@ -654,13 +658,17 @@ body {
       width: 100%;
       display: -webkit-box;
       display: flex;
-      padding-left: 10px
+      padding-left: 10px;
+      padding-bottom: 20px
   }
 .postStories-item-title, .postAudio-item-title {
       max-height: 50%
   }
 .postStories-item-subtitle, .postAudio-item-subtitle {
       display: none
+  }
+.post-footer-button{
+      width: 270px
   }
 .postcontainer {
     display: none
@@ -712,6 +720,9 @@ body {
       height: 80px;
       overflow: hidden
   }
+.post-footer-button a {
+      font-size: 14px
+  }
 .postcontainer-item {
       display: none
   }
@@ -728,5 +739,9 @@ body {
   }
 .postStories-item-blog, .postAudio-item-blog {
         height: auto!important;
-    }
+  }
+.post-footer-button {
+  width: 660px;
+  margin-left: 20px;
+  }
     }
